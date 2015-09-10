@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>login</title>
+<title>Sign in</title>
 </head>
 <body>
-	<h3>登录成功！</h3>
+	<h3>登录！</h3>
 </body>
 </html>

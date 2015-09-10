@@ -12,13 +12,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.prpall.schema.User;
 
 @Controller
-@RequestMapping("login")
 public class LoginController {
 
-    @RequestMapping("login.do")
-    public String login() {
-
-        return "login";
+    @RequestMapping("signin")
+    public String signin() {
+        return "signin";
+    }
+    @RequestMapping("signup")
+    public String signup() {
+        return "signup";
+    }
+    @RequestMapping("signout")
+    public String signout() {
+        return "signout";
     }
 
     public static void main(String[] args) throws IOException {
