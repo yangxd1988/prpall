@@ -14,20 +14,23 @@ import com.prpall.schema.User;
 @Controller
 public class LoginController {
 
-    @RequestMapping("signin")
+    @RequestMapping("signin.do")
     public String signin() {
         return "signin";
     }
-    @RequestMapping("signup")
+
+    @RequestMapping("signup.do")
     public String signup() {
         return "signup";
     }
-    @RequestMapping("signout")
+
+    @RequestMapping("signout.do")
     public String signout() {
         return "signout";
     }
 
-    public static void main(String[] args) throws IOException {
+    @RequestMapping("user.do")
+    public String user() throws IOException {
         // mybatis的配置文件
         String resource = "mybatis-config.xml";
         // 使用类加载器加载mybatis的配置文件（它也加载关联的映射文件）
@@ -50,5 +53,6 @@ public class LoginController {
         // 执行查询返回一个唯一user对象的sql
         User user = session.selectOne(statement, 1);
         System.out.println(user);
+        return "user";
     }
 }

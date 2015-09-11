@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>User</title>
 </head>
 <body>
-	<h2>This is home.jsp</h2>
+	<h1>用户信息</h1>
 </body>
 </html>
