@@ -9,7 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.prpall.model.pojo.User;
+import com.prpall.model.User;
 
 @Controller
 public class UserController {
@@ -49,7 +49,7 @@ public class UserController {
          * me.gacl.mapping.userMapper是userMapper.xml文件中mapper标签的namespace属性的值，
          * getUser是select标签的id属性值，通过select标签的id属性值就可以找到要执行的SQL
          */
-        String statement = "mybatis.mapper.UserMapper.selectUser";// 映射sql的标识字符串
+        String statement = "mybatis.mapping.UserMapper.selectUser";// 映射sql的标识字符串
         // 执行查询返回一个唯一user对象的sql
         User user = session.selectOne(statement, 1);
         System.out.println(user);
