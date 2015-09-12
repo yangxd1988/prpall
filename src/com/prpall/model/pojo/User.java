@@ -1,4 +1,4 @@
-package com.prpall.schema;
+package com.prpall.model.pojo;
 
 public class User {
 
