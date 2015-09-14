@@ -1,11 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%
-    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
-            + request.getContextPath() + "/";
-%>
 <!DOCTYPE html>
 <html>
 <head>
+<base href="/">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +10,7 @@
 <title>Welcome to prpall.top!</title>
 
 <!-- Bootstrap -->
-<link href="<%=basePath%>static/css/bootstrap.min.css" rel="stylesheet">
+<link href="/static/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,12 +29,12 @@
           <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
             class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Brand</a>
+        <a class="navbar-brand" href="/">Prpall</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="http://blog.prpall.top">Blog <span class="sr-only">(current)</span></a></li>
           <li><a href="#">Link</a></li>
           <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
             aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -58,15 +55,15 @@
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Link</a></li>
+          <li><a href="#">注册</a></li>
           <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-            aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            aria-haspopup="true" aria-expanded="false">个人中心<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
+              <li><a href="#">个人信息</a></li>
               <li><a href="#">Another action</a></li>
               <li><a href="#">Something else here</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">退出</a></li>
             </ul></li>
         </ul>
       </div>
@@ -77,8 +74,8 @@
   <h1>Hello!</h1>
   <h3>Welcome to prpall.top!</h3>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="<%=basePath%>static/js/jquery-1.11.3.min.js"></script>
+  <script src="/static/js/jquery-1.11.3.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="<%=basePath%>static/js/bootstrap.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
 </body>
 </html>
